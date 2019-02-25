@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>@ViewData["Title"]</title>
+    </head>
+    <body>
+        <h1>@ViewData["Header"]</h1>
+        <ul>
+            @foreach(var item in (string[])ViewData["Items"])
+            {
+                <ul>@item</ul>
+            }
+        </ul>
+    </body>
+</html>
