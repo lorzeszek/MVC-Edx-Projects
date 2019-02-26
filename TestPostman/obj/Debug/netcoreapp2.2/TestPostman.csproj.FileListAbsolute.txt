@@ -1,0 +1,48 @@
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.deps.json
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.runtimeconfig.json
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.runtimeconfig.dev.json
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.dll
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.pdb
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.csprojAssemblyReference.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.csproj.CoreCompileInputs.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorAssemblyInfo.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorAssemblyInfo.cs
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.AssemblyInfoInputs.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.AssemblyInfo.cs
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorTargetAssemblyInfo.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.dll
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.pdb
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.Views.dll
+C:\Users\Kasztan\Documents\Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.Views.pdb
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.TagHelpers.input.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.TagHelpers.output.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorCoreGenerate.cache
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\Razor\Views\Game\Create.g.cshtml.cs
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorTargetAssemblyInfo.cs
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.Views.pdb
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.csproj.CopyComplete
+C:\Users\Kasztan\Documents\Projects\TestPostman\obj\Debug\netcoreapp2.2\Razor\Views\Game\Created.g.cshtml.cs
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.deps.json
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.runtimeconfig.json
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.runtimeconfig.dev.json
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.dll
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.pdb
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.Views.dll
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\bin\Debug\netcoreapp2.2\TestPostman.Views.pdb
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.csprojAssemblyReference.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.csproj.CoreCompileInputs.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorAssemblyInfo.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorAssemblyInfo.cs
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.AssemblyInfoInputs.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.AssemblyInfo.cs
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.TagHelpers.input.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.TagHelpers.output.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorCoreGenerate.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\Razor\Views\Game\Create.g.cshtml.cs
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\Razor\Views\Game\Created.g.cshtml.cs
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorTargetAssemblyInfo.cache
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.RazorTargetAssemblyInfo.cs
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.Views.pdb
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.dll
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.pdb
+C:\Users\Kasztan\Documents\MVC Edx Projects\TestPostman\obj\Debug\netcoreapp2.2\TestPostman.csproj.CopyComplete
