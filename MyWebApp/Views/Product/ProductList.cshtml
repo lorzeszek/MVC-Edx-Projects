@@ -17,11 +17,13 @@
     </tr>
     @foreach (var p in this.Model.Products){
         <tr>
-            <td>@p.ID</td><td>@p.Name</td><td>@p.Price</td><td>@(p.Price * rate)</td>
+            <td>@p.ID</td><td>"@p.Name"</td><td>@p.Price</td><td>@(p.Price * rate)</td>
         </tr>
     }
 </table>
-@Html.ColorfulHeading(1, "green", "Welcome to Seattle")
+@Html.ColorfulHeading(1, "blue", "Welcome to Seattle")2
+@Html.CheckBox("test")
+
 <p>@DateTime.Now</p>
 
 @functions {
