@@ -20,5 +20,10 @@ namespace MyWebApp.Controllers
             ViewBag.Items = "DDD EEE FFF".Split(' ');
             return View();
         }
+
+        public IActionResult My() 
+        {
+            return View();
+        }
     }
 }

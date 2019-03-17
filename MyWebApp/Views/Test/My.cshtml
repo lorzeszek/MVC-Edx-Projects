@@ -1,0 +1,13 @@
+@model MyWebApp.Models.Person
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    @Html.FakeTextBoxFor(p => p.ID)<br />
+    @Html.FakeTextBoxFor(p => p.Name)<br />
+    @Html.FakeTextBoxFor(p => p.Age)<br />
+    @Html.CheckBoxFor(p => p.Mature)
+</body>
+</html>
