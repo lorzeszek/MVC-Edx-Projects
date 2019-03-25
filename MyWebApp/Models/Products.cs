@@ -6,6 +6,15 @@ namespace MyWebApp.Models {
         public int ID { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+        public string Description { get; set; }
+        public int Password { get; set; }
+
+        public Product(){}
+
+        public Product(int id, string name, double price, int password) {
+            this.ID = id; this.Name = name; this.Price = price; this.Password = password;
+        }
+
     }
 
     public class Discount {
