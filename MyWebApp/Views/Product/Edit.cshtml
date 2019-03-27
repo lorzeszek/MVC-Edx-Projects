@@ -1,28 +1,46 @@
 @model MyWebApp.Models.Product
 <html>
 <body>
+
+    <h2>ActionLink</h2>
     @Html.ActionLink("Hyperlink 01", "Index")<br />
     @Html.ActionLink("Hyperlink 02", "Index", new { id = Model.ID })<br />
     @Html.ActionLink("Hyperlink 03", "TargetAction", new { name = Model.Name })<br />
     @Html.ActionLink("Hyperlink 04", "TargetAction", "TargetController", new { id = Model.ID }, new { style = "color:red" })<br />
 
+
+    <h2>BeginForm and TextBoxFor and HiddenFor</h2>
     @using (Html.BeginForm("Show", "Product")) {
-        <input type="text" name="id" value="@Model.ID" /><br />
+        <h2>helpers tags</h2>
+        @Html.LabelFor(p => p.Name)<br />
         @Html.TextBoxFor(p => p.Name, Model.Name)<br />
+        @Html.LabelFor(p => p.Price, Model.Price)<br />
         @Html.TextBoxFor(p => p.Price, Model.Price)<br />
         @Html.HiddenFor(p => p.ID, Model.ID)<br />
+
+        <h2>manual tags</h2>
+        <input type="text" name="id" value="@Model.ID" /><br />
         <input type="text" name="name" value="@Model.Name" /><br />
-        <input type="text" name="price" value="@Model.Price" /><br />
+        <label for="test">Cena</label><br />
+        <input type="text" id="test" name="price" value="@Model.Price" /><br />
         <input type="submit" value="Submit" /><br />
         
-        @Html.Password("Password", "12321312")<br />
     }
 
-    @using (Html.BeginForm("TargetAction", "TargetController")) {
+    <h2>Password</h2>
+    @Html.Password("Password", "12321312")<br />
+
+        
+    
+    <h2>TextArea</h2>
+    @using (Html.BeginForm("Edit", "Product")) {
         @Html.TextArea("description", Model.Description)<br />
         @Html.TextAreaFor(p => p.Description, Model.Description)<br />
         <input type="submit" value="Submit" /><br />
     }
+
+    
+
 
     
 

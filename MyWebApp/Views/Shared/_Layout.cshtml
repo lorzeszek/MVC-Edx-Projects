@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>My Web App</title>
+    </head>
+    <body>
+        |@Html.ActionLink("Home", "Home", "Home")
+        |@Html.ActionLink("Page1", "Page1", "Home")
+        |@Html.ActionLink("Page2", "Page2", "Home")|
+        <hr/>
+        @RenderBody()
+        <hr/>
+        Copyright | @DateTime.Now.ToString()
+    </body>
+</html>
