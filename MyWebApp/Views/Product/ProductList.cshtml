@@ -13,11 +13,11 @@
 <h4 style="color: blue">The @off% off discount will be valid from @start to @end!</h4>
 <table border="1">
     <tr>
-        <th>ID</th><th>Name</th><th>Price</th><th>Discount Price</th>
+        <th>ID</th><th>Name</th><th>Price</th><th>Discount Price</th><th>Password</th><th>Description</th>
     </tr>
     @foreach (var p in this.Model.Products){
         <tr>
-            <td>@p.ID</td><td>"@p.Name"</td><td>@p.Price</td><td>@(p.Price * rate)</td>
+            <td>@p.ID</td><td>@p.Name</td><td>@p.Price</td><td>@(p.Price * rate)</td><td>@p.Password</td><td>@p.Description</td>
         </tr>
     }
 </table>
