@@ -21,4 +21,4 @@ namespace MyWebApp
         public IActionResult Page1() => View();
         public IActionResult Page2() => View();
     }
-}
+} 

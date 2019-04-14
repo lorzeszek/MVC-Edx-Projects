@@ -9,14 +9,14 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            //List actore names and lastnames:
+            //List actors names and lastnames:
 
-            // var dbContext = new sakilaContext();
-            // var actors = dbContext.Actor.ToList();
-            // foreach (var a in actors) 
-            // {
-            //     System.Console.WriteLine($"ID:{a.ActorId} Name:{a.FirstName} {a.LastName}");
-            // }
+            var dbContext = new sakilaContext();
+            var actors = dbContext.Actor.ToList();
+            foreach (var a in actors) 
+            {
+                System.Console.WriteLine($"ID:{a.ActorId} Name:{a.FirstName} {a.LastName}");
+            }
 
 
 
@@ -60,13 +60,13 @@ namespace MyApp
 
             //Delete record from DB:
 
-            var dbContext = new sakilaContext();
-            var dTarget = dbContext.City.SingleOrDefault(c => c.CityId == 1001);
-            if (dTarget != null) 
-            {
-                dbContext.Remove(dTarget);
-                dbContext.SaveChanges();
-            }
+            // var dbContext = new sakilaContext();
+            // var dTarget = dbContext.City.SingleOrDefault(c => c.CityId == 1001);
+            // if (dTarget != null) 
+            // {
+            //     dbContext.Remove(dTarget);
+            //     dbContext.SaveChanges();
+            // }
         }
     }
 }
