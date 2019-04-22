@@ -1,8 +1,21 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<GlobalCityManager.Models.City>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+            <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>CountryCode</th>
+                <th>District</th>
+                <th>Population</th>
+            </tr>
+            @foreach(var t in Model)
+            {
+                <partial name="_CityList" model="t" />
+            }
+        </table>
+
 </div>

@@ -1,0 +1,27 @@
+@model List<GlobalCityManager.Models.Country>
+
+<div class="text-center">
+    <h1 class="display-4">Countries list:</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+            <table border="1">
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Region</th>
+                <th>National Flag</th>
+                <th>Detail</th>
+            </tr>
+            @foreach(var t in Model)
+            {
+                <tr>
+                    <td>@t.Code</td>
+                    <td>@t.Name</td>
+                    <td>@t.Region</td>
+                    <td><img src="@t.NationalFlag"/></td>
+                    <td>@Html.ActionLink("Show Details", "Detail", new { code = t.Code })</td>
+                </tr>
+            }
+        </table>
+
+</div>

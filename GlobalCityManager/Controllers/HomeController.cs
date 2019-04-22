@@ -10,9 +10,16 @@ namespace GlobalCityManager.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly worldContext _db;
+        public HomeController(worldContext db)
+        {
+            _db = db;
+        }
         public IActionResult Index()
         {
-            return View();
+            var dbcontext = _db;
+            var cities = dbcontext.City.ToList();
+            return View(cities);
         }
 
         public IActionResult Privacy()
