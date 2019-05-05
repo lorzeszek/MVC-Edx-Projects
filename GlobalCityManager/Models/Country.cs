@@ -29,8 +29,8 @@ namespace GlobalCityManager.Models
         public string Region { get; set; }
 
         [Required]
-        [Column(TypeName = "char(26)")]
-        public string SurfaceArea { get; set; }
+        [Column(TypeName = "single")]
+        public Single SurfaceArea { get; set; }
 
         [Required]
         [Column(TypeName = "int")]
