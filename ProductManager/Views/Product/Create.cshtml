@@ -15,8 +15,7 @@
         <tr>
             <td>@Html.LabelFor(p => p.Type)</td>
             <td>
-                @Html.DropDownListFor(p => p.TypeID,
-               new SelectList(DataSource.GetProductTypes(), "ID", "Name"))
+                @Html.DropDownListFor(p => p.TypeID, new SelectList(DataSource.GetProductTypes(), "ID", "Name"))
             </td>
         </tr>
         <tr>

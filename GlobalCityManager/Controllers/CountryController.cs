@@ -8,6 +8,7 @@ using GlobalCityManager.Models;
 
 namespace GlobalCityManager.Controllers
 {
+    [Route("country")]
     public class CountryController : Controller
     {
         private readonly worldContext _db;
@@ -15,13 +16,17 @@ namespace GlobalCityManager.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
+        [Route("showall")]
+        [HttpGet]
+        public IActionResult ShowAll()
         {
             var dbcontext = _db;
             var countries = dbcontext.Country.ToList();
             return View(countries);
         }
 
+        [Route("details")]
+        [HttpGet]
         public IActionResult Detail(string code)
         {
             var dbcontext = _db;
@@ -30,6 +35,30 @@ namespace GlobalCityManager.Controllers
                 return View("Detail", country);
             else
                 return RedirectToAction("Index");
+        }
+
+        [Route("create")]
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var continentlist = (from country in _db.Country select country.Continent).ToList();
+            continentlist.Insert(0, "Select");
+            ViewBag.ListOfContinents = continentlist;
+            var regionlist = (from country in _db.Country select country.Region).ToList();
+            regionlist.Insert(0, "Select");
+            ViewBag.ListOfRegions = regionlist;
+            return View();
+        }
+
+        [Route("create")]
+        [HttpPost]
+        public IActionResult Create(Country country)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Country.Add(country);
+            }
+            return RedirectToAction("ShowAll");
         }
 
     }

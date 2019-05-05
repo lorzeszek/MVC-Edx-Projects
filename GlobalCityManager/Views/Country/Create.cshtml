@@ -1,0 +1,49 @@
+﻿@model GlobalCityManager.Models.Country
+
+<h1>Add Country</h1>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>@Html.LabelFor(p => p.Code)</td>
+            <td>@Html.TextBoxFor(p => p.Code)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.Name)</td>
+            <td>@Html.TextBoxFor(p => p.Name)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.Continent)</td>
+            <td>@Html.DropDownListFor(p => p.Continent, new SelectList(@ViewBag.ListOfContinents))</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.Region)</td>
+            <td>@Html.DropDownListFor(p => p.Region, new SelectList(@ViewBag.ListOfRegions))</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.SurfaceArea)</td>
+            <td>@Html.TextBoxFor(p => p.SurfaceArea)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.Population)</td>
+            <td>@Html.TextBoxFor(p => p.Population)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.LocalName)</td>
+            <td>@Html.TextBoxFor(p => p.LocalName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.GovernmentForm)</td>
+            <td>@Html.TextBoxFor(p => p.GovernmentForm)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(p => p.Code2)</td>
+            <td>@Html.TextBoxFor(p => p.Code2)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add Country" /></td>
+        </tr>
+    </table>
+}
+

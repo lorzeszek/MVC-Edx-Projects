@@ -1,0 +1,18 @@
+@model List<GlobalCityManager.Models.City>
+
+    <div class="text-center">
+        <h1 class="display-4">Cities list:</h1>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>CountryCode</th>
+                <th>District</th>
+                <th>Population</th>
+            </tr>
+            @foreach (var t in Model)
+            {
+                <partial name="_CityList" model="t" />
+            }
+        </table>
+    </div>
