@@ -17,30 +17,24 @@ namespace GlobalCityManager.Models
         [Column(TypeName = "char(3)")]
         public string Code { get; set; }
 
-        [Required]
         [Column(TypeName = "char(52)")]
         public string Name { get; set; }
 
         [Column(TypeName = "varchar(30)")]
         public string Continent { get; set; }
 
-        [Required]
         [Column(TypeName = "char(26)")]
         public string Region { get; set; }
 
-        [Required]
         [Column(TypeName = "single")]
         public Single SurfaceArea { get; set; }
 
-        [Required]
         [Column(TypeName = "int")]
         public int Population { get; set; }
 
-        [Required]
         [Column(TypeName = "char(45)")]
         public string LocalName { get; set; }
 
-        [Required]
         [Column(TypeName = "char(45)")]
         public string GovernmentForm { get; set; }
 

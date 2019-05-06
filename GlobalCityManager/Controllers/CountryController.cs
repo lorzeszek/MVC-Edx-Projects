@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GlobalCityManager.Models;
 
@@ -41,11 +37,11 @@ namespace GlobalCityManager.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var continentlist = (from country in _db.Country select country.Continent).ToList();
-            continentlist.Insert(0, "Select");
+            var continentlist = (from country in _db.Country select country.Continent).Distinct().ToList();
+            continentlist.Insert(0, "Select...");
             ViewBag.ListOfContinents = continentlist;
-            var regionlist = (from country in _db.Country select country.Region).ToList();
-            regionlist.Insert(0, "Select");
+            var regionlist = (from country in _db.Country select country.Region).Distinct().ToList();
+            regionlist.Insert(0, "Select...");
             ViewBag.ListOfRegions = regionlist;
             return View();
         }
@@ -57,10 +53,9 @@ namespace GlobalCityManager.Controllers
             if (ModelState.IsValid)
             {
                 _db.Country.Add(country);
-                _db.Country.SaveChanges();
+                _db.SaveChanges();
             }
             return RedirectToAction("ShowAll");
         }
-
     }
 }
