@@ -57,6 +57,7 @@ namespace GlobalCityManager.Controllers
             if (ModelState.IsValid)
             {
                 _db.Country.Add(country);
+                _db.Country.SaveChanges();
             }
             return RedirectToAction("ShowAll");
         }
