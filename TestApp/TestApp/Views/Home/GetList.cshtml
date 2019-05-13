@@ -1,0 +1,16 @@
+﻿@model List<TestApp.Model.Coffee>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetList</title>
+</head>
+<body>
+    @foreach (var coffee in Model)
+    {
+        <div>@coffee.Name</div>
+    }
+</body>
+</html>

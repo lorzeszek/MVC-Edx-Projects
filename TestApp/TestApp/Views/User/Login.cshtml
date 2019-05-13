@@ -1,0 +1,12 @@
+﻿@model TestApp.Model.User
+
+<form action="/User/login" method="post">
+    @Html.ValidationMessageFor(model => model.Name)
+    @Html.LabelFor(model => model.Name)
+    @Html.TextAreaFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Password)
+    @Html.LabelFor(model => model.Password)
+    @Html.PasswordFor(model => model.Password)
+    <input type="hidden" value="@ViewData["redirectUrl"]" name="redirectUrl" />
+    <input type="submit" value="Submit" />
+</form>

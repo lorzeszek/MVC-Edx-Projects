@@ -1,0 +1,15 @@
+﻿@model TestApp.Model.Coffee
+    <form action="/Home/Form" method="post">
+        @Html.ValidationMessageFor(model => model.Id)
+        @Html.NameFor(model => model.Id)
+        @Html.TextBoxFor(model => model.Id)
+        @Html.NameFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+        @Html.CheckBoxFor(model => model.HasSugar)
+        <input type="submit" value="Submit" />
+    @*<input type="text" placeholder="Name..." name="Name" />
+        <input type="number" name="Id" />
+        <input type="checkbox" name="HasSugar" />
+        <input type="submit" value="Submit" />*@
+    </form>
+
