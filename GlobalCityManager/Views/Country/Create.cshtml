@@ -7,6 +7,7 @@
         <tr>
             <td>@Html.LabelFor(p => p.Code)</td>
             <td>@Html.TextBoxFor(p => p.Code)</td>
+            <td>@Html.ValidationMessageFor(p => p.Code)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.Name)</td>
@@ -15,30 +16,37 @@
         <tr>
             <td>@Html.LabelFor(p => p.Continent)</td>
             <td>@Html.DropDownListFor(p => p.Continent, new SelectList(@ViewBag.ListOfContinents))</td>
+            <td>@Html.ValidationMessageFor(p => p.Continent)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.Region)</td>
             <td>@Html.DropDownListFor(p => p.Region, new SelectList(@ViewBag.ListOfRegions))</td>
+            <td>@Html.ValidationMessageFor(p => p.Region)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.SurfaceArea)</td>
             <td>@Html.TextBoxFor(p => p.SurfaceArea)</td>
+            <td>@Html.ValidationMessageFor(p => p.SurfaceArea)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.Population)</td>
             <td>@Html.TextBoxFor(p => p.Population)</td>
+            <td>@Html.ValidationMessageFor(p => p.Population)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.LocalName)</td>
             <td>@Html.TextBoxFor(p => p.LocalName)</td>
+            <td>@Html.ValidationMessageFor(p => p.LocalName)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.GovernmentForm)</td>
             <td>@Html.TextBoxFor(p => p.GovernmentForm)</td>
+            <td>@Html.ValidationMessageFor(p => p.GovernmentForm)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(p => p.Code2)</td>
             <td>@Html.TextBoxFor(p => p.Code2)</td>
+            <td>@Html.ValidationMessageFor(p => p.Code2)</td>
         </tr>
         <tr>
             <td></td>

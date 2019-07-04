@@ -10,11 +10,11 @@ namespace TestApp.Controllers
     [Route("home")]
     public class HomeController : Controller
     {
-        public readonly IRepository _repository;
-        public HomeController(IRepository repository)
-        {
-            _repository = repository;
-        }
+        // public readonly IRepository _repository;
+        // public HomeController(IRepository repository)
+        // {
+        //     _repository = repository;
+        // }
 
         [HttpGet]
         [Route("main")]

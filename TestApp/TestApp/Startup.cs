@@ -56,7 +56,7 @@ namespace TestApp
             //    context.Response.StatusCode = 200;
             //    return Task.CompletedTask;
             //});
-            app.UseAuthentication();
+            //app.UseAuthentication();
 ;           app.UseMvc();  //ostatni middleware to ten
         }
     }

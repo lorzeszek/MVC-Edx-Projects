@@ -30,6 +30,7 @@ namespace GlobalCityManager
 
             services.AddDbContext<worldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WorldDatabase")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddSpaStaticFiles();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +47,8 @@ namespace GlobalCityManager
                 app.UseHsts();
             }
 
+            //app.UseStatusCodePages(); // -> zwraca error np 404 plain textem, np.: "Status Code: 404; Not Found"
+            app.UseStatusCodePagesWithReExecute("/error/{0}");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -54,8 +57,13 @@ namespace GlobalCityManager
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "error",
+                    template: "error/{id}/");
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/");
+                
             });
         }
     }

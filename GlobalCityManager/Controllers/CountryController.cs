@@ -1,6 +1,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using GlobalCityManager.Models;
+using System.Threading.Tasks;
 
 namespace GlobalCityManager.Controllers
 {
@@ -33,29 +34,41 @@ namespace GlobalCityManager.Controllers
                 return RedirectToAction("Index");
         }
 
-        [Route("create")]
         [HttpGet]
+        [Route("create")]
         public IActionResult Create()
         {
-            var continentlist = (from country in _db.Country select country.Continent).Distinct().ToList();
+            var continentlist = _db.Country.Select(c => c.Continent).Distinct().ToList();
             continentlist.Insert(0, "Select...");
             ViewBag.ListOfContinents = continentlist;
-            var regionlist = (from country in _db.Country select country.Region).Distinct().ToList();
+
+            var regionlist = _db.Country.Select(c => c.Region).Distinct().ToList();
             regionlist.Insert(0, "Select...");
             ViewBag.ListOfRegions = regionlist;
+
             return View();
         }
 
-        [Route("create")]
         [HttpPost]
+        [Route("create")]
         public IActionResult Create(Country country)
         {
             if (ModelState.IsValid)
             {
                 _db.Country.Add(country);
                 _db.SaveChanges();
+                return RedirectToAction("Detail", country);
             }
-            return RedirectToAction("ShowAll");
+            
+            var continentlist = _db.Country.Select(c => c.Continent).Distinct().ToList();
+            continentlist.Insert(0, "Select...");
+            ViewBag.ListOfContinents = continentlist;
+
+            var regionlist = _db.Country.Select(c => c.Region).Distinct().ToList();
+            regionlist.Insert(0, "Select...");
+            ViewBag.ListOfRegions = regionlist;
+
+            return View();
         }
     }
 }
